@@ -26,15 +26,15 @@ debug(new Error('error'));
 ### error
 
 ```js
-var err1 = createError('invalid username', {
+let err1 = createError('invalid username', {
   code: 'invalid_param'
 });
 
-var err2 = createError(400, 'invalid username');
+let err2 = createError(400, 'invalid username');
 
-var err3 = createError('invalid username', 400);
+let err3 = createError('invalid username', 400);
 
-var err4 = createError(new Error('invalid username'), {
+let err4 = createError(new Error('invalid username'), {
   code: 'invalid_param'
 });
 ```
@@ -70,6 +70,12 @@ trace.handle('log', {
 });
 
 trace.handle(new Error('oh, god'));
+```
+
+### uuid
+
+```js
+let u = uuid();
 ```
 
 ### License
