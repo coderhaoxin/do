@@ -6,7 +6,7 @@ module.exports = function(config) {
 
     files: [
       'test/*.js',
-      'lib/*.js'
+      'test/dest/test/import/*.js'
     ],
 
     preprocessors: {

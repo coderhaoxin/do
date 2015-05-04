@@ -1,5 +1,6 @@
 bower_components/
 npm-debug.log
 node_modules/
+test/dest/
 .DS_Store
 coverage/

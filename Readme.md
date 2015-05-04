@@ -6,7 +6,6 @@ some small front-end libs
 * [querystring](lib/qs.js)
   - `qs.parse(str)`
   - `qs.stringify(obj)`
-  - `qs.get(key)`
 
 * [declaration](lib/declaration.js)
   - data-href: make it easy to use other tags as `a`
@@ -16,6 +15,11 @@ some small front-end libs
 ```
 
 ### debug
+
+* enable `debug` mode
+
+  - set `window.DEBUG = true`
+  - or add querystring `debug=true`
 
 ```js
 debug('log ...');
