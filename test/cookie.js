@@ -56,7 +56,7 @@ describe('## cookie', function() {
 
     it('should ignore URIError and return null', function() {
       document.cookie = 'bad=%'
-      expect(window.cookie('bad')).toEqual(undefined)
+      expect(window.cookie('bad')).toEqual('')
     })
   })
 
@@ -78,7 +78,7 @@ describe('## cookie', function() {
       var obj = cookie()
       expect(obj.name).toEqual('loki')
       expect(obj.species).toEqual('ferret')
-      expect(obj.bad).toEqual(undefined)
+      expect(obj.bad).toEqual('')
     })
   })
 })

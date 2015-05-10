@@ -18,13 +18,13 @@ some small front-end libs
 
 * enable `debug` mode
 
-  - set `window.DEBUG = true`
-  - or add querystring `debug=true`
+  - add querystring `debug=console` or `debug=alert`
 
 ```js
 debug('log ...')
 debug({name: 'debug'}, {info: 'log ...'})
 debug(new Error('error'))
+debug('data: %o', {name: 'debug'}, {info: 'log ...'})
 ```
 
 ### error
