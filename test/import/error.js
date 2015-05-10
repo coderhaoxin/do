@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { createError } from '../../lib/error';
+import { createError } from '../../lib/error'
 
-window.createError = createError;
+window.createError = createError

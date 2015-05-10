@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { assert } from '../../lib/assert';
+import { assert } from '../../lib/assert'
 
-window.assert = assert;
+window.assert = assert

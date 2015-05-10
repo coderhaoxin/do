@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { uuid } from '../../lib/uuid';
+import { uuid } from '../../lib/uuid'
 
-window.uuid = uuid;
+window.uuid = uuid

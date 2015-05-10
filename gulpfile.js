@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-let es6moduleTranspiler = require('gulp-es6-module-transpiler');
-let gulp = require('gulp');
+let es6moduleTranspiler = require('gulp-es6-module-transpiler')
+let gulp = require('gulp')
 
 gulp.task('module', function() {
   return gulp.src('test/import/*.js')
@@ -9,7 +9,7 @@ gulp.task('module', function() {
       formatter: 'bundle'
     }))
     .on('error', console.error.bind(console))
-    .pipe(gulp.dest('test/dest/'));
-});
+    .pipe(gulp.dest('test/dest/'))
+})
 
-gulp.task('default', ['module']);
+gulp.task('default', ['module'])

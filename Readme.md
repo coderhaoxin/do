@@ -22,9 +22,9 @@ some small front-end libs
   - or add querystring `debug=true`
 
 ```js
-debug('log ...');
-debug({name: 'debug'}, {info: 'log ...'});
-debug(new Error('error'));
+debug('log ...')
+debug({name: 'debug'}, {info: 'log ...'})
+debug(new Error('error'))
 ```
 
 ### error
@@ -32,25 +32,25 @@ debug(new Error('error'));
 ```js
 let err1 = createError('invalid username', {
   code: 'invalid_param'
-});
+})
 
-let err2 = createError(400, 'invalid username');
+let err2 = createError(400, 'invalid username')
 
-let err3 = createError('invalid username', 400);
+let err3 = createError('invalid username', 400)
 
 let err4 = createError(new Error('invalid username'), {
   code: 'invalid_param'
-});
+})
 ```
 
 ### assert
 
 ```js
-assert(1 === 1, message);
-assert.equal(1, 1, message);
-assert.isError(new Error('error'));
-assert.deepEqual([1, 2], [1, 2], message);
-assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message);
+assert(1 === 1, message)
+assert.equal(1, 1, message)
+assert.isError(new Error('error'))
+assert.deepEqual([1, 2], [1, 2], message)
+assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
 ```
 
 ### trace
@@ -60,26 +60,26 @@ assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message);
 
 ```js
 trace.registerError(function(error) {
-  if (error.status === 400) return true;
+  if (error.status === 400) return true
 }, function(error) {
   // do something
-});
+})
 
 trace.registerEvent('log', function(data) {
   // do something
-});
+})
 
 trace.handle('log', {
   info: 'a bug'
-});
+})
 
-trace.handle(new Error('oh, god'));
+trace.handle(new Error('oh, god'))
 ```
 
 ### uuid
 
 ```js
-let u = uuid();
+let u = uuid()
 ```
 
 ### License

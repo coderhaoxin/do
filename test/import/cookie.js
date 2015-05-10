@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { cookie } from '../../lib/cookie';
+import { cookie } from '../../lib/cookie'
 
-window.cookie = cookie;
+window.cookie = cookie

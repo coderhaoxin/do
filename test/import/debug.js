@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { debug } from '../../lib/debug';
+import { debug } from '../../lib/debug'
 
-window.debug = debug;
+window.debug = debug

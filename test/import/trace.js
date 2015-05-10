@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-import { trace } from '../../lib/trace';
+import { trace } from '../../lib/trace'
 
-window.trace = trace;
+window.trace = trace
