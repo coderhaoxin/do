@@ -4,12 +4,14 @@
     "test": "node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "devDependencies": {
-    "gulp": "3",
-    "gulp-es6-module-transpiler": "0",
-    "jasmine-core": "2",
-    "karma": "0",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-es6-module-transpiler": "*",
+    "jasmine-core": "*",
+    "karma": "*",
     "karma-chrome-launcher": "*",
     "karma-coverage": "*",
-    "karma-jasmine": "*"
+    "karma-jasmine": "*",
+    "run-sequence": "*"
   }
 }

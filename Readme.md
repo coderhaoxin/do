@@ -1,18 +1,19 @@
-some small front-end libs
+## some small front-end libs
+
+### assert
+
+```js
+assert(1 === 1, message)
+assert.equal(1, 1, message)
+assert.isError(new Error('error'))
+assert.deepEqual([1, 2], [1, 2], message)
+assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
+```
+
+### cookie
 
 * [cookie](lib/cookie.js)
   - `cookie(key, value, options)`
-
-* [querystring](lib/qs.js)
-  - `qs.parse(str)`
-  - `qs.stringify(obj)`
-
-* [declaration](lib/declaration.js)
-  - data-href: make it easy to use other tags as `a`
-
-```html
-<div data-href="/a/b/c.html"></div>
-```
 
 ### debug
 
@@ -25,6 +26,15 @@ debug('log ...')
 debug({name: 'debug'}, {info: 'log ...'})
 debug(new Error('error'))
 debug('data: %o', {name: 'debug'}, {info: 'log ...'})
+```
+
+### declaration
+
+* [declaration](lib/declaration.js)
+  - data-href: make it easy to use other tags as `a`
+
+```html
+<div data-href="/a/b/c.html"></div>
 ```
 
 ### error
@@ -43,14 +53,25 @@ let err4 = createError(new Error('invalid username'), {
 })
 ```
 
-### assert
+### fixed
+
+* [fixed](lib/fixed.js)
 
 ```js
-assert(1 === 1, message)
-assert.equal(1, 1, message)
-assert.isError(new Error('error'))
-assert.deepEqual([1, 2], [1, 2], message)
-assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
+let bar = document.querySelector('#bar')
+toTop(bar)
+```
+
+### qs
+
+* [querystring](lib/qs.js)
+  - `qs.parse(str)`
+  - `qs.stringify(obj)`
+
+### scroll
+
+```
+toTop(1000) // scroll to top (1000ms)
 ```
 
 ### trace
