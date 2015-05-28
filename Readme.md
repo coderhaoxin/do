@@ -19,7 +19,7 @@ assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
 
 * enable `debug` mode
 
-  - add querystring `debug=console` or `debug=alert`
+  - add querystring `debug=console` or `debug=alert` or `debug=write`
 
 ```js
 debug('log ...')
