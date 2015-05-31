@@ -19,7 +19,9 @@ assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
 
 * enable `debug` mode
 
-  - add querystring `debug=console` or `debug=alert` or `debug=page`
+  - add querystring `debug=console`, `debug=alert`, `debug=page`, `debug=report`
+  - with `report` mode, you need provide a api the accept `report requests` with method `POST`
+    * by: `__api__=http://debug.com/report`
 
 ```js
 debug('log ...')
