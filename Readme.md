@@ -27,7 +27,7 @@ assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
 debug('log ...')
 debug({name: 'debug'}, {info: 'log ...'})
 debug(new Error('error'))
-debug('data: %o', {name: 'debug'}, {info: 'log ...'})
+debug('data: %o, info: %o', {name: 'debug'}, {info: 'log ...'})
 ```
 
 ### declaration
@@ -97,6 +97,19 @@ trace.handle('log', {
 })
 
 trace.handle(new Error('oh, god'))
+```
+
+### url
+
+* [url](lib/url.js)
+  - `resolve(from, to)`
+  - `join(from, to)`
+
+```js
+resolve('https://github.com/api?name=hello', 'status')
+resolve('https://github.com/api#hello', 'status')
+resolve('https://github.com/api', 'status')
+join('https://github.com/api', 'status')
 ```
 
 ### uuid

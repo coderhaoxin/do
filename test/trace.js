@@ -23,7 +23,6 @@ describe('## trace', function() {
         // todo
       }
     })
-
   })
 
   describe('# register error handler', function() {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>example</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 5000px;
+    }
+    p.title {
+      height: 200px;
+      width: 100%;
+      background: green;
+    }
+    p.nav {
+      height: 60px;
+      width: 100%;
+      background: red;
+    }
+  </style>
+  <body>
+    <div>
+      <p class="title">title</p>
+      <p class="nav">nav</p>
+    </div>
+  </body>
+  <script src="../test/dest/test/import/fixed.js"></script>
+  <script>
+    toTop(document.querySelector('p.nav'), 'onscroll')
+  </script>
+</html>
