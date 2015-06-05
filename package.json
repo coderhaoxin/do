@@ -5,8 +5,9 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "gulp-es6-module-transpiler": "*",
+    "gulp-babel": "5",
     "gulp-react": "3",
+    "gulp-webpack": "1",
     "jasmine-core": "*",
     "karma": "*",
     "karma-chrome-launcher": "*",

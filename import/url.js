@@ -1,6 +1,6 @@
 'use strict'
 
-import { resolve, join } from '../../lib/url'
+import { resolve, join } from '../lib/url'
 
 window.url = {
   resolve: resolve,
