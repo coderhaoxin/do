@@ -24,6 +24,7 @@ assert.notDeepEqual({name: 'test'}, {name: 'hello'}, message)
     * by: `__api__=http://debug.com/report`
 
 ```js
+var debug = Debug('prefix')
 debug('log ...')
 debug({name: 'debug'}, {info: 'log ...'})
 debug(new Error('error'))

@@ -5,7 +5,7 @@
   <body></body>
   <script src="../build/dest/index.js"></script>
   <script>
-    var debug = new Debug('debug')
+    var debug = Debug('debug')
     debug('some info')
     debug(10086)
     debug('hello', 'world')
@@ -16,8 +16,15 @@
     debug('name: %s, age: %d, info: %o', 'haoxin', 18, {
       location: 'Shanghai'
     })
+    var circular = {
+      name: 'circular'
+    }
+    circular.circular = circular
+    circular.list = [ circular, circular ]
+    debug('circular: %o', circular)
+    debug(circular)
 
-    var debug2 = new Debug('debug2')
+    var debug2 = Debug('debug2')
     debug2('some info')
     debug2(10086)
     debug2('hello', 'world')
