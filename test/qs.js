@@ -1,11 +1,11 @@
 'use strict'
 
 describe('## qs', function() {
+  let s = 'name=hello&word=world'
   let o = {
-      name: 'hello',
-      word: 'world'
-    },
-    s = 'name=hello&word=world'
+    name: 'hello',
+    word: 'world'
+  }
 
   describe('# parse', function() {
     it('success', function() {

@@ -13,7 +13,7 @@ gulp.task('pack', function() {
         filename: 'index.js'
       }
     }))
-    .pipe(gulp.dest('build/dist/'))
+    .pipe(gulp.dest('build/dest/'))
 })
 
 gulp.task('react', function() {

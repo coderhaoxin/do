@@ -19,6 +19,9 @@ describe('## url', function() {
         from: 'http://github.com/api',
         to: 'status',
         expect: 'http://github.com/api/status'
+      }, {
+        from: 'http://github.com/api/items/../status',
+        expect: 'http://github.com/api/status'
       }]
 
       cases.forEach(function(c) {
