@@ -3,6 +3,7 @@
 import { parse, stringify } from '../lib/qs'
 import { createError } from '../lib/error'
 import { resolve, join } from '../lib/url'
+import * as strkit from '../lib/string'
 import { assert } from '../lib/assert'
 import { cookie } from '../lib/cookie'
 import { Debug } from '../lib/debug'
@@ -11,6 +12,7 @@ import { trace } from '../lib/trace'
 import { uuid } from '../lib/uuid'
 
 window.createError = createError
+window.strkit = strkit
 window.assert = assert
 window.cookie = cookie
 window.Debug = Debug
