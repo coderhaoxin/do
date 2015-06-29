@@ -65,6 +65,12 @@ let bar = document.querySelector('#bar')
 toTop(bar)
 ```
 
+### image
+
+* [image](lib/image.js)
+
+  - `resize`
+
 ### qs
 
 * [querystring](lib/qs.js)

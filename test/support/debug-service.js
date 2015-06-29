@@ -6,7 +6,7 @@ const util = require('util')
 const server = http.createServer(function(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Credentials', 'true')
-  res.setHeader('Access-Control-Request-Method', 'GET,POST,PUT,DELETE')
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE')
   res.setHeader('Access-Control-Allow-Headers', 'Accept,Content-Type,Origin,X-Requested-With')
 
   let data = []

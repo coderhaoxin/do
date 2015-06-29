@@ -1,5 +1,6 @@
 'use strict'
 
+import { dataURL2Blob, resize } from '../lib/image'
 import { parse, stringify } from '../lib/qs'
 import { createError } from '../lib/error'
 import { resolve, join } from '../lib/url'
@@ -11,10 +12,12 @@ import { toTop } from '../lib/fixed'
 import { trace } from '../lib/trace'
 import { uuid } from '../lib/uuid'
 
+window.dataURL2Blob = dataURL2Blob
 window.createError = createError
 window.strkit = strkit
 window.assert = assert
 window.cookie = cookie
+window.resize = resize
 window.Debug = Debug
 window.toTop = toTop
 window.trace = trace

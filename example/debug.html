@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <meta charset="UTF-8">
-  <title>example</title>
+  <title>debug</title>
   <body></body>
   <script src="../build/dest/index.js"></script>
   <script>
@@ -23,17 +23,5 @@
     circular.list = [ circular, circular ]
     debug('circular: %o', circular)
     debug(circular)
-
-    var debug2 = Debug('debug2')
-    debug2('some info')
-    debug2(10086)
-    debug2('hello', 'world')
-    debug2(111, 222, 333)
-    debug2({ name: 'debug' })
-    debug2([1, 2, 3])
-    debug2(new Error('>_< error'))
-    debug2('name: %s, age: %d, info: %o', 'haoxin', 18, {
-      location: 'Shanghai'
-    })
   </script>
 </html>
