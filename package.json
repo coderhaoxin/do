@@ -1,8 +1,11 @@
 {
+  "name": "do",
   "private": true,
+  "version": "0.8.0",
+  "description": "some small front-end libs",
   "scripts": {
     "start": "node test/support/debug-service",
-    "test": "node_modules/karma/bin/karma start test/karma.conf.js"
+    "test": "gulp && node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "devDependencies": {
     "gulp": "*",
@@ -15,5 +18,6 @@
     "karma-coverage": "*",
     "karma-jasmine": "*",
     "run-sequence": "*"
-  }
+  },
+  "license": "MIT"
 }

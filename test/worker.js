@@ -60,4 +60,21 @@ describe('## worker', function() {
       }, 500)
     })
   })
+
+  describe('# Once', function() {
+    it('success', function() {
+      let total = 0
+      function add(a, b) {
+        total += b
+      }
+
+      let worker = new window.Once(add)
+
+      worker.run(1, 2)
+      worker.run(1, 2)
+      worker.run(1, 2)
+
+      expect(total).toEqual(2)
+    })
+  })
 })

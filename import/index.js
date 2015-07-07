@@ -1,7 +1,7 @@
 'use strict'
 
+import { Single, single, Once } from '../lib/worker'
 import { dataURL2Blob, resize } from '../lib/image'
-import { Single, single } from '../lib/worker'
 import { parse, stringify } from '../lib/qs'
 import { createError } from '../lib/error'
 import { resolve, join } from '../lib/url'
@@ -25,6 +25,7 @@ window.Debug = Debug
 window.toTop = toTop
 window.trace = trace
 window.uuid = uuid
+window.Once = Once
 
 window.qs = {
   stringify: stringify,
