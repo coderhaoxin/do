@@ -1,28 +1,30 @@
 {
   "name": "do",
   "private": true,
-  "version": "0.8.0",
+  "version": "0.9.0",
   "main": "build/lib",
   "description": "some small front-end libs",
   "scripts": {
     "start": "node test/support/debug-service",
     "test": "gulp && node_modules/karma/bin/karma start test/karma.conf.js",
-    "postinstall": "npm install && node_modules/.bin/gulp"
+    "postinstall": "gulp babel"
   },
   "files": [
     "gulpfile.js",
     "lib/"
   ],
-  "devDependencies": {
-    "gulp": "*",
+  "dependencies": {
+    "gulp": "3",
     "gulp-babel": "5",
     "gulp-webpack": "1",
+    "run-sequence": "1"
+  },
+  "devDependencies": {
     "jasmine-core": "*",
     "karma": "*",
     "karma-chrome-launcher": "*",
     "karma-coverage": "*",
-    "karma-jasmine": "*",
-    "run-sequence": "*"
+    "karma-jasmine": "*"
   },
   "license": "MIT"
 }
