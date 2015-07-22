@@ -2,7 +2,6 @@
 
 const pack = require('gulp-webpack')
 const babel = require('gulp-babel')
-const react = require('gulp-react')
 const seq = require('run-sequence')
 const gulp = require('gulp')
 
@@ -16,18 +15,8 @@ gulp.task('pack', function() {
     .pipe(gulp.dest('build/dest/'))
 })
 
-gulp.task('react', function() {
-  return gulp.src('lib/*.js')
-    .pipe(react({
-      harmony: true,
-      es6module: true
-    }))
-    .on('error', console.error.bind(console))
-    .pipe(gulp.dest('build/react/'))
-})
-
 gulp.task('babel', function() {
-  return gulp.src('build/react/*.js')
+  return gulp.src('lib/*.js')
     .pipe(babel())
     .pipe(gulp.dest('build/lib'))
 })
@@ -39,5 +28,5 @@ gulp.task('import', function() {
 })
 
 gulp.task('default', function() {
-  seq('react', 'babel', 'import', 'pack')
+  seq('babel', 'import', 'pack')
 })

@@ -2,15 +2,20 @@
   "name": "do",
   "private": true,
   "version": "0.8.0",
+  "main": "build/lib",
   "description": "some small front-end libs",
   "scripts": {
     "start": "node test/support/debug-service",
-    "test": "gulp && node_modules/karma/bin/karma start test/karma.conf.js"
+    "test": "gulp && node_modules/karma/bin/karma start test/karma.conf.js",
+    "postinstall": "npm install && node_modules/.bin/gulp"
   },
+  "files": [
+    "gulpfile.js",
+    "lib/"
+  ],
   "devDependencies": {
     "gulp": "*",
     "gulp-babel": "5",
-    "gulp-react": "3",
     "gulp-webpack": "1",
     "jasmine-core": "*",
     "karma": "*",

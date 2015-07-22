@@ -3,15 +3,15 @@
 import { Single, single, Once } from '../lib/worker'
 import { dataURL2Blob, resize } from '../lib/image'
 import { parse, stringify } from '../lib/qs'
-import { createError } from '../lib/error'
 import { resolve, join } from '../lib/url'
 import * as strkit from '../lib/string'
-import { assert } from '../lib/assert'
-import { cookie } from '../lib/cookie'
-import { Debug } from '../lib/debug'
+import createError from '../lib/error'
 import { toTop } from '../lib/fixed'
 import { trace } from '../lib/trace'
-import { uuid } from '../lib/uuid'
+import assert from '../lib/assert'
+import cookie from '../lib/cookie'
+import Debug from '../lib/debug'
+import uuid from '../lib/uuid'
 
 window.dataURL2Blob = dataURL2Blob
 window.createError = createError
