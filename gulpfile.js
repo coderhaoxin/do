@@ -17,7 +17,10 @@ gulp.task('pack', function() {
 
 gulp.task('babel', function() {
   return gulp.src('lib/*.js')
-    .pipe(babel())
+    .pipe(babel({
+      loose: 'all',
+      stage: 0
+    }))
     .pipe(gulp.dest('build/lib'))
 })
 

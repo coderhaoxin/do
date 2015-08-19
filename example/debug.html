@@ -5,23 +5,31 @@
   <body></body>
   <script src="../build/dest/index.js"></script>
   <script>
-    var debug = Debug('debug')
-    debug('some info')
-    debug(10086)
-    debug('hello', 'world')
-    debug(111, 222, 333)
-    debug({ name: 'debug' })
-    debug([1, 2, 3])
-    debug(new Error('>_< error'))
-    debug('name: %s, age: %d, info: %o', 'haoxin', 18, {
-      location: 'Shanghai'
-    })
-    var circular = {
-      name: 'circular'
+    function run1(debug) {
+      debug('some info')
+      debug(10086)
+      debug('hello', 'world')
+      debug(111, 222, 333)
+      debug({ name: 'debug' })
+      debug([1, 2, 3])
+      debug(new Error('>_< error'))
+      debug('name: %s, age: %d, info: %o', 'haoxin', 18, {
+        location: 'Shanghai'
+      })
     }
-    circular.circular = circular
-    circular.list = [ circular, circular ]
-    debug('circular: %o', circular)
-    debug(circular)
+
+    function run2(debug) {
+      var circular = {
+        name: 'circular'
+      }
+      circular.circular = circular
+      circular.list = [ circular, circular ]
+      debug('circular: %o', circular)
+      debug(circular)
+    }
+
+    run1(Debug('debug'))
+    run2(Debug('debug'))
+    run1(MiniDebug('mini-debug'))
   </script>
 </html>

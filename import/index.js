@@ -4,6 +4,7 @@ import { Single, single, Once } from '../lib/worker'
 import { dataURL2Blob, resize } from '../lib/image'
 import { parse, stringify } from '../lib/qs'
 import { resolve, join } from '../lib/url'
+import MiniDebug from '../lib/debug-mini'
 import * as strkit from '../lib/string'
 import createError from '../lib/error'
 import { toTop } from '../lib/fixed'
@@ -15,6 +16,7 @@ import uuid from '../lib/uuid'
 
 window.dataURL2Blob = dataURL2Blob
 window.createError = createError
+window.MiniDebug = MiniDebug
 window.strkit = strkit
 window.assert = assert
 window.cookie = cookie
